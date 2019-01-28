@@ -4,7 +4,6 @@ import MovieReviews from './MovieReviews'
 
 const NYT_API_KEY = 'f98593a095b44546bf4073744b540da0';
 
-
 // Code SearchableMovieReviewsContainer Here
 export default class LatestMovieReviewsContainer extends Component {
   constructor(props) {
