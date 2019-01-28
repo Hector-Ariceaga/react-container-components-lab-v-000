@@ -14,8 +14,8 @@ const Review = ({movieTitle, reviewTitle, author, url}) => {
   return(
     <div className='review'>
       <h3>{movieTitle}</h3>
-      <h4>{reviewTitle}<h4>
-      <h5>{author}<h5>
+      <h4>{reviewTitle}</h4>
+      <h5>{author}</h5>
       <a href={url}>{url}</a>
     </div>
   )
