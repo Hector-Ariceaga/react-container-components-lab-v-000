@@ -11,13 +11,13 @@ export default class LatestMovieReviewsContainer extends Component {
     super(props)
     this.state = {
       reviews: [],
-      query: ''
+      searchTerm: ''
     }
   }
 
   handleChange = ({query}) => {
     this.setState({
-      query: query
+      searchTerm: query
     })
   }
 
