@@ -17,5 +17,3 @@ const Review = ({review}) => {
   )
 }
 
-export MovieReviews
-export Review
