@@ -15,7 +15,17 @@ export default class LatestMovieReviewsContainer extends Component {
     }
   }
 
+  render(){
+    return(
+      <div class="latest-movie-reviews"><MovieReviews />
+    )
+  }
 
+  componentDidMount() {
+    fetch(URL)
+    .then(res => res.json())
+    .then(data => console.log(data))
+  }
 
 
 }
