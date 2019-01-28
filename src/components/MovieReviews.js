@@ -16,3 +16,5 @@ const Review = ({review}) => {
     </div>
   )
 }
+
+export default MovieReviews
