@@ -5,7 +5,7 @@ const MovieReviews = ({reviews}) => {
   return(
     <div className='review-list'>
     {console.log(reviews)}
-      {reviews.map(review => <Review movieTitle={display_title} reviewTitle={headline} author={byline} url={link.url}/> )}
+      {reviews.map(review => <Review movieTitle={review.display_title} reviewTitle={review.headline} author={review.byline} url={review.link.url}/> )}
     </div>
   )
 }
