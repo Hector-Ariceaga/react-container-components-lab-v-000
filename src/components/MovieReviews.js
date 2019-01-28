@@ -12,6 +12,7 @@ const MovieReviews = ({reviews}) => {
 const Review = ({review}) => {
   return(
     <div className='review'>
+      {console.log(review)}
       {review}
     </div>
   )
