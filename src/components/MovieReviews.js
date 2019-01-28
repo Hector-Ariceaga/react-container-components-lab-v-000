@@ -10,13 +10,12 @@ const MovieReviews = ({reviews}) => {
   )
 }
 
-const Review = ({movieTitle, reviewTitle, author, url}) => {
+const Review = ({headline, byline, summary_short, link}) => {
   return(
-    <div className='review'>
-      <h3>{movieTitle}</h3>
-      <h4>{reviewTitle}</h4>
-      <h5>{author}</h5>
-      <a href={url}>{url}</a>
+    <div key={headline} className='review'>
+      <a href={link.url}>{headline}</a>
+      <h4>{byline}</h4>
+      <p>{summary_short}</p>
     </div>
   )
 }
