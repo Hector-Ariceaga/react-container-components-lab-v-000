@@ -19,8 +19,4 @@ const Review = ({headline, byline, summary_short, link}) => {
   )
 }
 
-MovieReviews.defaultProps = {
-  reviews: []
-}
-
 export default MovieReviews;
