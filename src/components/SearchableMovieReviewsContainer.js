@@ -20,7 +20,8 @@ export default class LatestMovieReviewsContainer extends Component {
     })
   }
 
-  fetchReviews = (query) => {
+  handleSubmit = e => {
+    
     const URL = `https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=${query}`
                 + `api-key=${NYT_API_KEY}`;
     fetch(URL)
@@ -31,7 +32,7 @@ export default class LatestMovieReviewsContainer extends Component {
   render() {
     return(
       <div className="searchable-movie-reviews">
-        <form onSubmit={this.fetchReviews}>
+        <form onSubmit={this.handleSubmit}>
           <input type="text" value={this.state.query} onChange={this.handleChange} />
           <input type="submit" value="Search" />
         </form>
