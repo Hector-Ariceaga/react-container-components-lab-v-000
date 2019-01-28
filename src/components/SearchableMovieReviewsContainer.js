@@ -22,7 +22,7 @@ export default class LatestMovieReviewsContainer extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    const URL = `https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=${query}`
+    const URL = `https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=${this.state.searchTerm}`
                 + `api-key=${NYT_API_KEY}`;
     fetch(URL)
     .then(res => res.json())
