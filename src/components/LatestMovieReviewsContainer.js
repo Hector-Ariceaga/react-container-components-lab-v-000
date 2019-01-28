@@ -8,8 +8,8 @@ const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
 
 // Code LatestMovieReviewsContainer Here
 export default class LatestMovieReviewsContainer extends Component {
-  constructor(props) {
-    super(props)
+  constructor() {
+    super()
     this.state = {
       reviews: []
     }
@@ -18,7 +18,7 @@ export default class LatestMovieReviewsContainer extends Component {
   componentDidMount() {
     fetch(URL)
     .then(res => res.json())
-    .then(reviews => this.setState({reviews}))
+    .then(reviews => this.setState({reviews: res.results}))
   }
 
   render() {
