@@ -21,4 +21,4 @@ const Review = ({movieTitle, reviewTitle, author, url}) => {
 }
 
 export default MovieReviews
-export Review
+export Review;
