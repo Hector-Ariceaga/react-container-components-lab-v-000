@@ -11,7 +11,7 @@ const MovieReviews = ({reviews}) => {
   )
 }
 
-const Review = ({key, movieTitle, reviewTitle, author, url}) => {
+const Review = ({movieTitle, reviewTitle, author, url}) => {
   return(
     <div className='review'>
       <h3>{movieTitle}</h3>
