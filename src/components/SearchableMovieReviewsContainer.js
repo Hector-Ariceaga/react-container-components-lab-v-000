@@ -23,7 +23,9 @@ export default class LatestMovieReviewsContainer extends Component {
   }
 
   fetchReviews = (query) => {
-    fetch(URL + query)
+    fetch(URL)
+    .then(res => res.json())
+    .then(reviews => this.setState({reviews}))
   }
   render() {
     return(
