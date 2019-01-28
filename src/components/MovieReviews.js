@@ -3,7 +3,7 @@ import React from 'react';
 
 const MovieReviews = ({reviews}) => {
   return(
-    <div class='review-list'>
+    <div className='review-list'>
       {reviews.map(review => <Review />)}
     </div>
   )
@@ -11,7 +11,7 @@ const MovieReviews = ({reviews}) => {
 
 const Review = ({review}) => {
   return(
-    <div class='review'>
+    <div className='review'>
       {review}
     </div>
   )
