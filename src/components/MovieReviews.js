@@ -17,5 +17,5 @@ const Review = ({review}) => {
   )
 }
 
-export default MovieReviews
-export default Review
+export MovieReviews
+export Review
