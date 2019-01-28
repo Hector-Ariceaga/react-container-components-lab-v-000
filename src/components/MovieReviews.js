@@ -1,10 +1,18 @@
 // Code MovieReviews Here
 import React from 'react';
 
-const MovieReviews = props => {
+const MovieReviews = ({reviews}) => {
   return(
     <div class='review-list'>
-      {props.reviews}
+      {reviews.map(review => <Review />)}
+    </div>
+  )
+}
+
+const Review = ({review}) => {
+  return(
+    <div class='review'>
+      {review}
     </div>
   )
 }
