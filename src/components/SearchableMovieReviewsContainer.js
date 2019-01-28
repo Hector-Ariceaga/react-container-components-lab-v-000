@@ -26,7 +26,7 @@ export default class LatestMovieReviewsContainer extends Component {
                 + `api-key=${NYT_API_KEY}`;
     fetch(URL)
     .then(res => res.json())
-    .then(reviews => this.setState({reviews}))
+    .then(data=> this.setState({reviews: data.results}))
   }
 
   render() {
