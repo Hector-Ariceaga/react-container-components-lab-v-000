@@ -15,15 +15,15 @@ export default class LatestMovieReviewsContainer extends Component {
     }
   }
 
-  render(){
-    return(
-      <div class="latest-movie-reviews"><MovieReviews reviews={this.state.reviews}/>
-    )
-  }
-
   componentDidMount() {
     fetch(URL)
     .then(res => res.json())
     .then(reviews => this.setState({reviews}))
+  }
+
+  render() {
+    return(
+      <div class="latest-movie-reviews"><MovieReviews reviews={this.state.reviews}/>
+    )
   }
 }
