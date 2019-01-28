@@ -4,7 +4,9 @@ import React from 'react';
 const MovieReviews = ({reviews}) => {
   return(
     <div className='review-list'>
-      {reviews.map((review, id) => <Review key={id} movieTitle={review.display_title} reviewTitle={review.headline} author={review.byline} url={review.link.url}/> )}
+      {reviews.map((review, id) => 
+        <Review key={id} movieTitle={review.display_title} reviewTitle={review.headline} author={review.byline} url={review.link.url}/> 
+      )}
     </div>
   )
 }
