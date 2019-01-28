@@ -16,4 +16,3 @@ const Review = ({review}) => {
     </div>
   )
 }
-
