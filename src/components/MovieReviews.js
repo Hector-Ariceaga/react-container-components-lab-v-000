@@ -10,7 +10,7 @@ const MovieReviews = ({reviews}) => {
   )
 }
 
-const Review = ({review}) => {
+const Review = ({movieTitle, reviewTitle, author, url}) => {
   return(
     <div className='review'>
       {console.log(review)}
