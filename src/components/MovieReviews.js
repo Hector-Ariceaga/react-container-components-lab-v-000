@@ -4,7 +4,6 @@ import React from 'react';
 const MovieReviews = ({reviews}) => {
   return(
     <div className='review-list'>
-     {console.log(reviews)}
       {reviews.map(Review)}
     </div>
   )
