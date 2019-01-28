@@ -29,11 +29,13 @@ export default class LatestMovieReviewsContainer extends Component {
   }
   render() {
     return(
-      <form onSubmit={this.fetchReviews}>
-        <input type="text" value={this.state.query} onChange={this.handleChange} />
-        <input type="submit" value="Search" />
-      </form>
-      <div className="searchable-movie-reviews">
-        <MovieReviews reviews={this.state.reviews}/>
+      <div>
+        <form onSubmit={this.fetchReviews}>
+          <input type="text" value={this.state.query} onChange={this.handleChange} />
+          <input type="submit" value="Search" />
+        </form>
+        <div className="searchable-movie-reviews">
+          <MovieReviews reviews={this.state.reviews}/>
+        </div>
       </div>
     )
